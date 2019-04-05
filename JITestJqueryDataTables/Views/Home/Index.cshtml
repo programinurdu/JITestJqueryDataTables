@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table table-condensed table-hover table-striped">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.FullName)
@@ -41,9 +41,8 @@
             @Html.DisplayFor(modelItem => item.Telephone)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.StudentId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.StudentId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.StudentId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.StudentId }, new { @class = "btn btn-primary" }) 
+            @Html.ActionLink("Details", "Details", new { id=item.StudentId }, new { @class = "btn btn-warning" })
         </td>
     </tr>
 }

@@ -17,5 +17,12 @@ namespace JITestJqueryDataTables.Controllers
             List<Student> students = tvm.GetAllStudents();
             return View(students);
         }
+
+        public ActionResult Desktop()
+        {
+            TestViewModel tvm = new TestViewModel();
+            List<Student> students = tvm.GetAllStudents();
+            return View(students);
+        }
     }
 }

@@ -8,3 +8,22 @@ $(document).ready(function () {
         "paging": false
     });
 });
+
+$(document).ready(function () {
+    $('#ajaxjdTable').dataTable({
+        "scrollY": '50vh',
+        "paging": false,
+        "ajax": {
+            "url": "/Home/StudentList",
+            "type": "Get",
+            "datatype": "json"
+        },
+        "columns": [
+            { "data": "StudentId" },
+            { "data": "FullName" },
+            { "data": "Email" },
+            { "data": "Mobile" },
+            { "data": "Telephone" }
+        ]
+    });
+});

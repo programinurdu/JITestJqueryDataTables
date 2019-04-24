@@ -43,7 +43,7 @@ $(document).ready(function () {
             { "data": "Mobile" },
             { "data": "Telephone" }
         ],
-        dom: 'lfBtip',
+        dom: 'lfBrtip',
         buttons: [
             'copy', 'excel', 'csv', 'pdf', 'print'
         ]

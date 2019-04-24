@@ -30,7 +30,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('#ajaxjdTable2').dataTable({
+    var table = $('#ajaxjdTable2').DataTable({
         "ajax": {
             "url": "/Home/StudentList",
             "type": "Get",
@@ -42,6 +42,12 @@ $(document).ready(function () {
             { "data": "Email" },
             { "data": "Mobile" },
             { "data": "Telephone" }
+        ],
+        dom: 'lfBtip',
+        buttons: [
+            'copy', 'excel', 'csv', 'pdf', 'print'
         ]
     });
+
+    table.buttons().container().appendTo($("#printbar"));
 });

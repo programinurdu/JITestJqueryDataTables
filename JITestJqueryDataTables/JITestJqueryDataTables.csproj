@@ -100,6 +100,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Buttons-1.5.6\css\buttons.bootstrap.css" />
+    <Content Include="Content\Buttons-1.5.6\css\buttons.dataTables.css" />
     <Content Include="Content\dataTables.bootstrap.css" />
     <Content Include="Content\jquery.dataTables.css" />
     <Content Include="Content\Site.css" />
@@ -122,6 +124,12 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Buttons-1.5.6\js\buttons.bootstrap.js" />
+    <Content Include="Scripts\Buttons-1.5.6\js\buttons.colVis.js" />
+    <Content Include="Scripts\Buttons-1.5.6\js\buttons.flash.js" />
+    <Content Include="Scripts\Buttons-1.5.6\js\buttons.html5.js" />
+    <Content Include="Scripts\Buttons-1.5.6\js\buttons.print.js" />
+    <Content Include="Scripts\Buttons-1.5.6\js\dataTables.buttons.js" />
     <Content Include="Scripts\dataTables.bootstrap.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -129,8 +137,12 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\jquery.dataTables.js" />
+    <Content Include="Scripts\JSZip-2.5.0\jszip.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\pdfmake-0.1.36\pdfmake.js" />
+    <Content Include="Scripts\pdfmake-0.1.36\vfs_fonts.js" />
     <Content Include="Scripts\Site.js" />
+    <Content Include="swf\flashExport.swf" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

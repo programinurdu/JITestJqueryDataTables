@@ -1,0 +1,38 @@
+﻿@model IEnumerable<JITestJqueryDataTables.Models.Student>
+@{
+    ViewBag.Title = "Ajax2";
+}
+
+
+<br/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Students List</h3>
+            </div>
+            <div class="panel-body">
+                <a href='@Url.Action("NewStudent", "Home")' class="btn btn-success">Add New</a>
+
+                <br/><br/>
+                <div class="tableheader">
+                    <table id="ajaxjdTable2" class="table table-condensed table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>StudentId</th>
+                                <th>FullName</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Telephone</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+          
+        </div>
+
+    </div>
+</div>
+
+

@@ -27,3 +27,21 @@ $(document).ready(function () {
         ]
     });
 });
+
+
+$(document).ready(function () {
+    $('#ajaxjdTable2').dataTable({
+        "ajax": {
+            "url": "/Home/StudentList",
+            "type": "Get",
+            "datatype": "json"
+        },
+        "columns": [
+            { "data": "StudentId" },
+            { "data": "FullName" },
+            { "data": "Email" },
+            { "data": "Mobile" },
+            { "data": "Telephone" }
+        ]
+    });
+});

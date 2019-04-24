@@ -16,3 +16,8 @@ textarea {
     max-width: 280px;
 }
 
+.tableheader table tr th {
+    background-color: #2fa4e7;
+    color: white;
+}
+

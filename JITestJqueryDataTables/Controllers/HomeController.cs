@@ -37,5 +37,10 @@ namespace JITestJqueryDataTables.Controllers
 
             return Json(new { data = students }, JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult Ajax2()
+        {
+            return View();
+        }
     }
 }

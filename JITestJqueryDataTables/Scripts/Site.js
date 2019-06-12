@@ -36,9 +36,14 @@ $(document).ready(function () {
             "type": "Get",
             "datatype": "json"
         },
+        "columnDefs": [
+            {
+                "targets": [5], "searchable": false, "orderable": false
+            }
+        ],
         "columns": [
-            { "data": "StudentId" },
-            { "data": "FullName" },
+            { "data": "StudentId", "title": "Student Id" },
+            { "data": "FullName", "title": "Full Name" },
             { "data": "Email" },
             { "data": "Mobile" },
             { "data": "Telephone" },
@@ -50,7 +55,12 @@ $(document).ready(function () {
         ],
         dom: 'lfBrtip',
         buttons: [
-            'copy', 'excel', 'csv', 'pdf', 'print'
+            { extend:'colvis', columns: ':not(.permanent)'},
+            { extend:'copy'},
+            { extend:'excel'},
+            { extend:'csv'},
+            { extend:'pdf'},
+            { extend:'print'}
         ]
     });
 

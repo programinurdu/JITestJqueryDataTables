@@ -19,5 +19,17 @@ namespace JITestJqueryDataTables.ViewModels.Home
 
             return students;
         }
+
+        public Student GetStudentInfoById(int id)
+        {
+            Student student = new Student();
+
+            using (Test2Context db = new Test2Context())
+            {
+                student = db.Students.Where(x => x.StudentId == id).FirstOrDefault();
+            }
+
+            return student;
+        }
     }
 }

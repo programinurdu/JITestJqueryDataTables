@@ -193,6 +193,7 @@
     <Content Include="Views\Home\Desktop.cshtml" />
     <Content Include="Views\Home\Ajax.cshtml" />
     <Content Include="Views\Home\Ajax2.cshtml" />
+    <Content Include="Views\Home\StudentInfo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

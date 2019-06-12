@@ -42,5 +42,13 @@ namespace JITestJqueryDataTables.Controllers
         {
             return View();
         }
+
+        public ActionResult StudentInfo(int Id=0)
+        {
+            TestViewModel tvm = new TestViewModel();
+            Student student = tvm.GetStudentInfoById(Id);
+
+            return View(student);
+        }
     }
 }

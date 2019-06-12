@@ -41,7 +41,12 @@ $(document).ready(function () {
             { "data": "FullName" },
             { "data": "Email" },
             { "data": "Mobile" },
-            { "data": "Telephone" }
+            { "data": "Telephone" },
+            {
+                "render": function (data, type, row, meta) {
+                    return '<a class="btn btn-primary btn-xs" href="/Home/StudentInfo/' + row.StudentId + '">View</a> <a class="btn btn-danger btn-xs" href="/Home/DeleteStudent/' + row.StudentId + '">Delete</a>';
+                }
+            }
         ],
         dom: 'lfBrtip',
         buttons: [
